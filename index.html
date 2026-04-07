@@ -613,8 +613,36 @@
 
     /* ─── RESPONSIVE ─────────────────────────── */
     @media (max-width: 640px) {
-      nav { padding: 0.75rem 1rem; }
-      .nav-links { display: none; }
+      nav {
+        padding: 0.7rem 1rem 0.85rem;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.55rem;
+      }
+      .nav-logo {
+        width: 100%;
+        justify-content: center;
+        gap: 0.6rem;
+      }
+      .nav-logo img {
+        height: 38px;
+        width: 38px;
+      }
+      .nav-title {
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
+      }
+      .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding-top: 0.35rem;
+        border-top: 1px solid rgba(201,168,76,0.18);
+      }
+      .nav-links a { font-size: 0.72rem; }
       #plantilla { padding-bottom: 5rem; }
       #staff { padding-top: 5rem; }
       .group-heading { margin-bottom: 1.75rem; }
